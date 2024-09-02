@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+input, button, select, textarea {
+  font: inherit;
+}
+
+.form-header {
+  display: flex;
+  width: 100%;
+  margin-block: 2rem;
+  justify-content: center;
+  color: deepskyblue;
+}
+
+.sign-up-container {
+  margin-top: 2rem;
+  position: relative;
+  width: min(90%, 500px);
+  min-height: 40vh;
+  padding: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 1px solid #000;
+  border-radius: 10px;
+}
+.sign-up-form {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.sign-up-form .input-section {
+  /* outline: 1px solid green; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.input-section .sign-type-label {
+  outline: 1px solid rgb(10, 181, 112);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.sign-radio-btn {
+  display: none;
+}
+.sign-type-label:has(+ .sign-radio-btn:checked) {
+  background-color: lightgreen;
+}
+.sign-up-form input {
+  width: 50%;
+  padding-left: 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  border: 1px solid #000;
+}
+.sign-up-submit-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  width: 40%;
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  transition: color 500ms ease-in, background-color 500ms ease-out;
+  cursor: pointer;
+}
+.sign-up-submit-btn:hover {
+  color: #000;
+  background-color: #fff;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+}
+.login-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1ch;
+  margin-top: 2rem;
+}
+.login-hint b {
+  font-weight: 300;
+}
+.login-hint a {
+  text-decoration: none;
+}

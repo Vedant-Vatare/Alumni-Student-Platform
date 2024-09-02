@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/sign-up.css"/>
+  </head>
+  <body>
+    <div class="form-header">
+      <h1>Sign Up</h1>
+    </div>
+    <div class="container sign-up-container">
+      <form action="" class="sign-up-form">
+        <div class="email-section input-section">
+          <label for="email-id">Email: </label>
+          <input type="email" id="email-id" name="email-address" required />
+        </div>
+        <div class="password-section input-section">
+          <label for="email-password">Password: </label>
+          <input type="text" id="pass" name="password" required />
+        </div>
+        <div class="sign-up-type input-section">
+          <label for="student-sign-up" class="sign-type-label">Student</label>
+          <input type="radio" name="sign-in-type" id="student-sign-up" class="sign-radio-btn">
+          <label for="alumni-sign-up" class="sign-type-label">Alumni</label>
+          <input type="radio" name="sign-in-type" id="alumni-sign-up" class="sign-radio-btn">
+          <label for="institute-sign-up" class="sign-type-label">Institution</label>
+          <input type="radio" name="sign-in-type" id="institute-sign-up" class="sign-radio-btn">
+        </div>
+        <button class="sign-up-submit-btn">Sign Up</button>
+      </form>
+    </div>
+    <div class="login-hint">
+      <b>Already Have an account?</b>
+      <a href="#">Login</a>
+    </div>
+  </body>
+</html>
