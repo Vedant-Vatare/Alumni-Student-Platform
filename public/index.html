@@ -1,37 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumni Form</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Connect</title>
+    <link rel="icon" href="./images/platform-logo.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="./scripts/app.js" defer></script>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <div class="form-container">
-        <h1>Add Alumni</h1>
-        <form id="alumniForm">
-            <label for="firstName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="text" id="phoneNumber" name="phoneNumber">
-
-            <label for="graduationYear">Graduation Year:</label>
-            <input type="number" id="graduationYear" name="graduationYear">
-
-            <label for="degree">Degree:</label>
-            <input type="text" id="degree" name="degree">
-
-            <label for="specialization">Specialization:</label>
-            <input type="text" id="specialization" name="specialization">
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    
-</body>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-platform-info">
+        <div class="header-logo">
+          <img src="./images/platform-logo.jpg" alt="platform Logo" />
+        </div>
+        <h3>Campus Connect</h3>
+      </div>
+      <div class="account-links">
+        <button><a href="./sign-up.html" target="_blank">Signup</a></button>
+        <button><a href="./user-login.html" target="_blank">Login</a></button>
+      </div>
+    </header>
+    <section class="hero-section">
+      <h1 style="--h1-clr: #d8f6ff">
+        <p style="--p-clr: #00aee5">Build Networks</p>
+      </h1>
+      <h1 style="--h1-clr: #e8e2f7">
+        <p style="--p-clr: #8131de">Share Knowledge</p>
+      </h1>
+      <h1 style="--h1-clr: #d5f8ef">
+        <p style="--p-clr: #16b88a">Grow Together !</p>
+      </h1>
+    </section>
+    <h1 class="heading-text">Benefits of using Campus Connect</h1>
+    <section class="benefits-section">
+      <h3>For Students</h3>
+      <div class="perks-container">
+        <div class="card" style="--card-bg: #fcbf49">
+          <span>Career Guidance</span>
+          <p class="brief">
+            Access mentorship and career advice from experienced alumni.
+          </p>
+        </div>
+        <div class="card" style="--card-bg: #0077b6">
+          <span>Networking Opportunity</span>
+          <p class="brief">
+            Connect with professionals and peers in your field of interest.
+          </p>
+        </div>
+        <div class="card" style="--card-bg: #57cc99">
+          <span>Skill Development</span>
+          <p class="brief">
+            Participate in webinars, workshops, and projects to enhance your
+            skills.
+          </p>
+        </div>
+      </div>
+      <h3>For Alumni</h3>
+      <div class="perks-container">
+        <div class="card" style="--card-bg: #7209b7">
+          <span>Showcase Achievements</span>
+          <p class="brief">
+            Highlight your career accomplishments and projects on the platform.
+          </p>
+        </div>
+        <div class="card" style="--card-bg: #f72585">
+          <span>Stay Updated</span>
+          <p class="brief">
+            Keep up with the latest developments and opportunities in your
+            field.
+          </p>
+        </div>
+        <div class="card" style="--card-bg: #4cc9f0">
+          <span>Mentorship Opportunities</span>
+          <p class="brief">
+            Guide and mentor current students, sharing valuable knowledge and
+            experience.
+          </p>
+        </div>
+      </div>
+      <h3>For Institutes</h3>
+      <div class="perks-container">
+        <div class="card" style="--card-bg: #06d6a0">
+          <span>Alumni Tracking</span>
+          <p class="brie">
+            Maintain an up-to-date alumni database to track their achievements
+            and contributions.
+          </p>
+        </div>
+        <div class="card" style="--card-bg: #fee440">
+          <span>Career Services Improvement</span>
+          <p class="brief">
+            Utilize alumni networks to provide better job and internship
+            opportunities for current students.
+          </p>
+        </div>
+        <div class="card" style="--card-bg: #118ab2">
+          <span>Institutional Branding</span>
+          <p class="breif">
+            Strengthen your brand by showcasing successful alumni and
+            institutional achievements.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        "Connecting Students, Alumni, and Institutions for a Brighter Future."
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,7 +1,7 @@
-const alumniForm = document.getElementById("alumniForm");
-alumniForm.addEventListener("submit", (e) => {
-  sendAlumniData(e);
-});
+// const alumniForm = document.getElementById("alumniForm");
+// alumniForm.addEventListener("submit", (e) => {
+//   sendAlumniData(e);
+// });
 
 async function sendAlumniData(event) {
   event.preventDefault();
@@ -28,6 +28,6 @@ async function sendAlumniData(event) {
     }
   } catch (error) {
     console.error("Error:", error);
-    console.log("An error occurred.\nCould not connect to Database.");
+    console.log("An error occurred.\nCould not connect to server.");
   }
 }
