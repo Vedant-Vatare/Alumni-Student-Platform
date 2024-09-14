@@ -3,3 +3,12 @@ node_modules/
 .env
 
 *.log
+
+# Node modules directory
+node_modules/
+
+# Environment variable file
+.env
+
+# Log files (optional)
+*.log
