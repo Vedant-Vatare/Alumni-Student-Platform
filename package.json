@@ -1,0 +1,17 @@
+{
+  "name": "campus-connect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "devStart": "nodemon ./server/server",
+    "start": "node ./server/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
