@@ -14,16 +14,13 @@ app.use("/keep-alive", keepAliveRouter);
 
 app.use(express.static(path.join(__dirname, "../client")));
 mongoose
-  .connect(
-    "mongodb+srv://vedant_v:N7oabc8sXAeuit4H@cluster0.ivdbny1.mongodb.net/alumniDB"
-  )
+  .connect(process.env.MONGODB_URL)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
-
 app.all("*", (req, res, next) => {
   console.log("request from:", req.url);
-  next()
+  next();
 });
 
 app.use((err, req, res, next) => {
@@ -31,18 +28,16 @@ app.use((err, req, res, next) => {
   res.send("An Error Occured from the server side.");
 });
 
-
-function sendDummyRequests() {
+function sendPeriodicRequest() {
   // 15 minutes timer
-  const timeInterval = 1000;  
-  console.log(`${process.env.RENDER_API_URL}`)
-  console.log("preparing to send dummy req.")
-  setTimeout(async ()=> {
-    const dummyRequest = await fetch(`${process.env.RENDER_API_URL}/keep-alive/new`);
-    sendDummyRequests()
-  }, timeInterval)
+  const timeInterval = 1000 * 60 * 15;
+  setTimeout(async () => {
+    await fetch(`${process.env.RENDER_API_URL}/keep-alive/`);
+    sendPeriodicRequest();
+  }, timeInterval);
 }
+sendPeriodicRequest();
 
-sendDummyRequests()
 const port = 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
