@@ -35,9 +35,10 @@ app.use((err, req, res, next) => {
 function sendDummyRequests() {
   // 15 minutes timer
   const timeInterval = 1000;  
+  console.log(`${process.env.RENDER_API_URL}`)
   console.log("preparing to send dummy req.")
   setTimeout(async ()=> {
-    const dummyRequest = await fetch(`${process.env.REDNER_API_URL}/keep-alive/new`);
+    const dummyRequest = await fetch(`${process.env.RENDER_API_URL}/keep-alive/new`);
     sendDummyRequests()
   }, timeInterval)
 }

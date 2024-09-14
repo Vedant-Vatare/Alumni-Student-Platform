@@ -1,7 +1,7 @@
 {
   "name": "alumni-platform",
   "version": "1.0.0",
-  "description": "",
+  "description": "",  
   "main": "server.js",
   "scripts": {
     "devStart": "nodemon ./server/server.js",
