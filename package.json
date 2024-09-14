@@ -2,10 +2,10 @@
   "name": "alumni-platform",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "devStart": "nodemon ./src/server.js",
-    "start": "node ./src/server.js",
+    "devStart": "nodemon ./server/server.js",
+    "start": "node ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.6.0",
     "zod": "^3.23.8"
