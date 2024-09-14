@@ -1,4 +1,5 @@
-# 🎓 Intelligent Platform for Alumni-Student Interaction
+# Campus Connect
+## 🎓An Intelligent Platform for Alumni-Student Interaction
 
 ![Hackathon](https://img.shields.io/badge/Smart%20India%20Hackathon-2024-blue) ![Status](https://img.shields.io/badge/Project%20Status-In%20Progress-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
@@ -27,6 +28,6 @@ This project is developed for the **Smart India Hackathon (SIH) 2024** under the
 | 🖥️ **Backend**    | **Node.js, Express.js** - Building a scalable and efficient server-side architecture. |
 | 🗄️ **Database**   | **MongoDB** - Managing data storage with a NoSQL database.                        |
 | 🤖 **AI/ML**      | **AI** - Integrating smart features, content moderation, and chatbots. |
-| ☁️ **Deployment** | **[Render](https://aws.amazon.com/)** - Hosting and scaling the platform. |
+| ☁️ **Deployment** | **Vercel** (Frontend) <br/> **Render** (Backend)|
 
 
