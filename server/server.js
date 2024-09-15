@@ -29,8 +29,8 @@ app.use((err, req, res, next) => {
 });
 
 function sendPeriodicRequest() {
-  // 15 minutes timer
-  const timeInterval = 1000 * 60 * 15;
+  // 13 minutes timer
+  const timeInterval = 1000 * 60 * 13;
   setTimeout(async () => {
     await fetch(`${process.env.RENDER_API_URL}/keep-alive/`);
     sendPeriodicRequest();
